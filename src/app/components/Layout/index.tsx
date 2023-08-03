@@ -22,7 +22,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       id="root"
       className={"flex min-h-screen flex-col items-cente " + inter.className}
     >
-      <div className="flex min-h-screen min-w-full flex-col items-center dark:bg-slate-950 bg-slate-50">
+      <div className="flex min-h-screen min-w-full flex-col items-center dark:bg-slate-950 bg-slate-50 dark:text-gray-50 text-gray-900">
         <div className="flex justify-around min-w-full p-4">
           <Header />
           <ThemeSwitcher
