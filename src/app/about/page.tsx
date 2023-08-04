@@ -1,4 +1,3 @@
-import Layout from "@/app/components/Layout";
 import { differenceInYears } from "date-fns";
 import { Metadata } from "next";
 

@@ -1,12 +1,13 @@
 "use client";
 import { useEffect, useState } from "react";
-import Header from "../Header";
 
-import ThemeSwitcher from "../ThemeSwitcher";
 import { Inter } from "next/font/google";
+import Header from "./Header";
+import ThemeSwitcher from "./ThemeSwitcher";
+
 const inter = Inter({ subsets: ["latin"] });
 
-const Layout = ({ children }: { children: React.ReactNode }) => {
+const Template = ({ children }: { children: React.ReactNode }) => {
   const [isLight, setIsLight] = useState(true);
 
   useEffect(() => {
@@ -36,4 +37,4 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default Layout;
+export default Template;

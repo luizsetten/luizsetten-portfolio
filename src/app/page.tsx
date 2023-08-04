@@ -1,5 +1,4 @@
-"use client";
-import "./index.css";
+import "./globals.css";
 
 export default function Home() {
   return (
