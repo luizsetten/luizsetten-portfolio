@@ -19,6 +19,10 @@ export default function Header() {
       link: "/posts",
       title: "Posts",
     },
+    {
+      link: "/projects",
+      title: "Projetos",
+    },
   ];
   return (
     <div className="flex dark:text-gray-50 text-gray-950">
