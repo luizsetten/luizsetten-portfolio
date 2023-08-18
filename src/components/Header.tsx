@@ -9,11 +9,11 @@ export default function Header() {
   const links: ILink[] = [
     {
       link: "/",
-      title: "Início",
+      title: "Home",
     },
     {
       link: "/about",
-      title: "Sobre",
+      title: "About",
     },
     {
       link: "/posts",
@@ -21,7 +21,7 @@ export default function Header() {
     },
     {
       link: "/projects",
-      title: "Projetos",
+      title: "Projects",
     },
   ];
   return (
