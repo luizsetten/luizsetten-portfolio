@@ -12,14 +12,6 @@ import {
 const grid = 8;
 
 const getItemStyle = (draggableStyle: any) => ({
-  // some basic styles to make the items look a bit nicer
-  // userSelect: "none",
-  // padding: grid * 2,
-  // margin: `0 0 ${grid}px 0`,
-
-  // change background colour if dragging
-  // background: isDragging ? "lightgreen" : "grey",
-
   // styles we need to apply on draggables
   ...draggableStyle,
 });
@@ -44,14 +36,25 @@ const Kanban = () => {
       title: "To Do",
       list: [
         {
-          description: "Relou",
-          id: "first",
-          title: "AAaasAAA",
+          description: "Start studies in NestJS",
+          id: "nestStudy",
+          title: "Back-end: NestJS",
         },
         {
-          description: "Relou",
-          id: "firsat",
-          title: "AAAAA",
+          description:
+            "Use the back-end project that I'll create as a CMS (maybe I could build a inerface with strapi too)",
+          id: "nestStudyInteration",
+          title: "Back-end: NestJS integration with portfolio site",
+        },
+        {
+          description: "Read documentation and apply, you could choose",
+          id: "zustand",
+          title: "Front-end: Learn Zustand",
+        },
+        {
+          description: "Read documentation and apply, you could choose",
+          id: "mongodb",
+          title: "Database: Learn MongoDB",
         },
       ],
     },
@@ -60,32 +63,23 @@ const Kanban = () => {
       title: "Doing",
       list: [
         {
-          description: "Relou",
-          id: "fasdirst",
-          title: "AAaasAAA",
+          description:
+            "Continue building this site (this shoudn't be inside a kanban, because for me it's a process but putting this here could help me organize things)",
+          id: "portfolio",
+          title: "Front-end: Portfolio site",
         },
         {
-          description: "Relou",
-          id: "fertirsat",
-          title: "AAAAA",
+          description:
+            "Link: https://ibm-learning.udemy.com/course/curso-de-reactjs-nextjs-completo-do-basico-ao-avancado",
+          id: "luisotaviocourse",
+          title: "Front-end: Watch couse of Luis Otavio Miranda at Udemy",
         },
       ],
     },
     {
       id: "done",
       title: "Done",
-      list: [
-        {
-          description: "Relou",
-          id: "fasdiadarst",
-          title: "AAaasAAA",
-        },
-        {
-          description: "Relou",
-          id: "fertigdfgrsat",
-          title: "AAAAA",
-        },
-      ],
+      list: [],
     },
   ]);
 
@@ -145,7 +139,7 @@ const Kanban = () => {
                         style={getItemStyle(provided.draggableProps.style)}
                       >
                         <h1 className="text-lg">{item.title}</h1>
-                        <p>{item.description}</p>
+                        <p className="text-sm">{item.description}</p>
                       </div>
                     )}
                   </Draggable>
