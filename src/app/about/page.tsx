@@ -26,8 +26,13 @@ export default function About() {
 
   const experiences = [
     {
+      title: "Software engineer - Saúde Bliss",
+      duration: "oct 2023 - Present",
+      description: `Saúde Bliss platform’s. Applied knowledge of ReactJS, Typescript, NodeJs, Scrum and Kanban.`,
+    },
+    {
       title: "Software developer - IBM",
-      duration: "nov 2021 - Present",
+      duration: "nov 2021 - oct 2023",
       description: `Banco do Brasil platform’s. Applied knowledge of Angular, Typescript, Jasmine,
       Java, Quarkus, JPA, Scrum and Kanban. Create new applications and give
       maintenance to applications that already exist.`,
