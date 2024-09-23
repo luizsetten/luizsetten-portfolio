@@ -54,7 +54,7 @@ export default function About() {
   ];
 
   return (
-    <div className="max-w-xl">
+    <div className="max-w-xl max-sm:mx-4">
       <div className="flex-row flex mt-8">
         <article>
           <h1 className="text-lg font-bold mb-3">About me</h1>
@@ -70,7 +70,7 @@ export default function About() {
           width={250}
           height={250}
           objectFit="cover"
-          className="rounded-2xl"
+          className="rounded-2xl max-sm:hidden"
           alt="Profile photo of Luiz Setten"
         />
       </div>

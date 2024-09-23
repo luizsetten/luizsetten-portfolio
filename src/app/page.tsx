@@ -5,7 +5,7 @@ export default function Home() {
     <div className="flex flex-col flex-grow align-middle justify-center text-center">
       <div className="p-4 rounded-xl">
         <h1 className="text-7xl mb-36 flex">
-          <div className="shake">
+          <div className="shake max-sm:hidden">
             <div className="shake">👋</div>
           </div>
           Hello, I&apos;m Luiz Setten
